@@ -96,10 +96,10 @@
 
         default_mac {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                      &kp T                                           &kp Y    &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &trans                &kp AT_SIGN  &kp H    &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X         &kp C         &kp V                      &kp B        &kp COLON             &kp SEMI     &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT LANGUAGE_1  &lt 1 SPACE  &lt 5 LANGUAGE_2      &kp BSPC     &kp RET                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R                      &kp T                                               &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F                      &kp G        &kp LS(LG(NUMBER_4))      &kp AT_SIGN  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z      &kp X         &kp C         &kp V                      &kp B        &lt 6 COLON               &kp SEMI     &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mt LEFT_SHIFT LANGUAGE_1  &lt 7 SPACE  &lt 5 LANGUAGE_2          &kp BSPC     &lt 8 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -134,19 +134,19 @@
 
         Mac_Layer1 {
             bindings = <
-&kp LC(A)  &kp LC(F)             &kp LC(C)    &kp LC(V)  &kp LC(LS(V))                             &kp PERCENT           &kp DOLLAR             &trans           &trans         &kp PIPE
-&kp TAB    &mt LA(LEFT_ALT) F12  &kp LS(TAB)  &mkp MB1   &mkp MB2       &trans      &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN      &kp AMPERSAND  &kp DOUBLE_QUOTES
-&trans     &trans                &trans       &trans     &mkp MB3       &trans      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp SINGLE_QUOTE
-&trans     &trans                &trans       &trans     &trans         &trans      &trans         &trans                                                                       &kp HASH
+&kp LG(A)  &kp LG(F)     &kp LG(C)    &kp LG(V)  &kp LS(LG(V))                             &kp PERCENT           &kp DOLLAR             &trans           &trans         &kp PIPE
+&kp TAB    &kp LEFT_WIN  &kp LS(TAB)  &mkp MB1   &mkp MB2       &trans      &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN      &kp AMPERSAND  &kp DOUBLE_QUOTES
+&trans     &trans        &trans       &trans     &mkp MB3       &trans      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp SINGLE_QUOTE
+&trans     &trans        &trans       &trans     &trans         &trans      &trans         &trans                                                                       &kp HASH
             >;
         };
 
         Mac_Layer2 {
             bindings = <
-&kp ESC         &trans        &trans       &trans  &trans                         &kp LG(W)        &kp LG(LEFT_ARROW)  &mkp MB3  &kp LG(RIGHT_ARROW)  &kp HOME
-&kp TAB         &kp LEFT_WIN  &kp LS(TAB)  &trans  &trans  &trans      &kp LG(T)  &kp LC(TAB)      &mkp MB1            &kp UP    &mkp MB2             &kp PG_UP
-&kp LEFT_SHIFT  &trans        &trans       &trans  &trans  &trans      &trans     &kp LC(LS(TAB))  &kp LEFT            &kp DOWN  &kp RIGHT            &kp PG_DN
-&kp LCTRL       &kp LEFT_ALT  &trans       &trans  &trans  &trans      &trans     &trans                                                              &kp END
+&kp ESC         &trans        &trans       &kp LC(UP_ARROW)    &kp LG(UP_ARROW)                              &kp LG(W)        &kp LG(LEFT_ARROW)  &mkp MB3  &kp LG(RIGHT_ARROW)  &kp HOME
+&kp TAB         &kp LEFT_WIN  &kp LS(TAB)  &kp LG(M)           &kp LC(LG(F))       &trans         &kp LG(T)  &kp LC(TAB)      &mkp MB1            &kp UP    &mkp MB2             &kp PG_UP
+&kp LEFT_SHIFT  &trans        &trans       &kp LC(DOWN_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(N)      &trans     &kp LC(LS(TAB))  &kp LEFT            &kp DOWN  &kp RIGHT            &kp PG_DN
+&kp LCTRL       &kp LEFT_ALT  &trans       &trans              &trans              &trans         &trans     &trans                                                              &kp END
             >;
         };
     };
