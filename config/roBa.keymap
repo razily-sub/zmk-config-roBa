@@ -18,12 +18,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 11>;
         };
 
         muhennkann {
@@ -78,10 +78,10 @@
 
         Layer_1-win {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                             &kp F6                &kp F7                 &kp F8           &kp F9         &kp F10
-&kp F11  &kp F12  &trans  &trans  &trans  &trans      &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN      &kp AMPERSAND  &kp PIPE
-&trans   &trans   &trans  &trans  &trans  &trans      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp SINGLE_QUOTE
-&trans   &trans   &trans  &trans  &trans  &trans      &trans         &trans                                                                       &kp HASH
+&kp F1   &kp F2                &kp F3       &kp F4    &kp F5                               &kp F6                &kp F7                 &kp F8           &kp F9         &kp F10
+&kp TAB  &mt LA(LEFT_ALT) F12  &kp LS(TAB)  &mkp MB1  &mkp MB2  &trans      &kp PERCENT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN      &kp AMPERSAND  &kp PIPE
+&trans   &trans                &trans       &trans    &trans    &trans      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp SINGLE_QUOTE
+&trans   &trans                &trans       &trans    &trans    &trans      &trans         &trans                                                                       &kp HASH
             >;
         };
 
